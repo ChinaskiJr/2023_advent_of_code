@@ -1,7 +1,7 @@
 import 'dart:io';
 
-void main() async {
-  File file = File('./input.txt');
+void main() {
+  final File file = File('./input.txt');
   file.readAsLines().then((List<String> lines) {
     partOne(lines);
     partTwo(lines);
